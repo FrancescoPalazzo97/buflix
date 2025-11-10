@@ -1,1 +1,5 @@
 <h2 class="text-2xl">HTTPClient</h2>
+
+@for (item of trendingAll(); track item.id) {
+    <p>{{ item.media_type === 'movie' ? item.title : item.name }}</p>
+}
